@@ -1,0 +1,74 @@
+
+.main-carrocel{
+    width: 100%;
+  
+}
+
+.main-container{
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-nossasLinhas, .div-container-produtos{
+    display: flex;
+    flex-direction: row;   
+}
+
+.div-nossasLinhas h2{
+    color: #212121;
+    font-size: 45px;
+    line-height: 27px;
+    word-wrap: break-word;
+    padding: 4% 0 2% 2%;
+       
+}
+
+
+
+
+/*BUTTONS de rolagem carocel______________________________________________________________________________  */
+.previus-cards, .next-cards{
+    all: unset;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 12%; 
+    z-index: 1000;
+    opacity: 0.7;
+    
+
+}
+.next-cards{
+    left: 94%;
+    
+}
+.previus-cards{
+    left: 2%;
+    
+}
+
+
+
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0.8% 3% 0.8%;
+    padding: 22px 24px;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.50);
+    scroll-snap-align: start;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 500px) {
+    .main-carrocel{
+       display: none;
+    }
+}

@@ -1,0 +1,278 @@
+.nav-sec-header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+
+.nav-logo{
+    
+    padding: 20px 0 0 73px;
+    width: 50%;
+  
+}
+
+.nav-sec-links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+ 
+   
+}
+
+
+.nav-links{
+    width: 38%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
+.nav-links a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: #F5F5F7;
+    text-decoration: none;
+   
+}
+
+
+.nav-links a:hover{
+  transform: scale(1.11);
+  color: #9C796B;
+  transition: all  1s ease;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* ----------------------MENU mobile-------------- */
+
+.mobile-menu{
+    display: none;
+    margin: 5%; 
+    cursor: pointer;
+}
+
+
+.mobile-menu div {
+    border-radius: 30px;
+    width: 32px;
+    height: 3px;
+    background: #ffffff;
+    margin: 8px;
+    transition: 0.8s;
+}
+
+
+
+
+.pai-list-mobile{
+  
+    display: none;
+}
+
+
+
+.nav-list-li{ 
+    letter-spacing: 3px;
+    
+}
+
+.nav-list-a{
+    text-decoration: none;
+  
+}
+
+.nav-list-a:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .nav-sec-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5%;
+    }
+    .nav-logo{
+        height: 34%;
+        padding: 3% 0% 3% 5%;
+       
+    }
+    
+    .nav-links{
+        display: none;
+    }
+
+
+/*_____________________ MOBILE MENU   FAZER ANIMAÇAO ______________________________________________________ */
+    .pai-mobile-menu{
+        z-index: 3;
+    }
+    .mobile-menu{
+        display: block;
+        margin: 0%; 
+     
+    }
+
+    .mobile-menu div {
+        border-radius: 30px;
+        width: 27px;
+        height: 3px;
+    }
+
+
+    .biggerCard{
+        background: rgba(255, 255, 255, 0.321);
+        transform: scale(1.1);
+        transition: transform .8s ease;
+        position: relative;
+   
+    }
+
+
+
+
+
+
+    .pai-list-mobile{
+        flex-direction: column;
+        position: absolute;
+        top: 0vh;
+        right: 0;
+        width: 100vw;
+        background: #fff;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 2;
+       
+    }
+    
+    .nav-list{
+        display: flex;
+        padding: 12%;
+        background: #fff;
+        flex-direction: column;
+  
+    }
+
+    .nav-menu-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+        background: linear-gradient(180deg, rgba(185, 228, 250, 0.00) 0%, #AED0EF 21.24%);
+      
+    }
+  
+    .nav-first-li-marge{
+        margin-top: 34px;
+    }
+
+    .nav-list-li{ 
+      
+        display: flex;
+    
+        height: 85px;
+        width: 100%;
+   
+    }
+
+    .li-container-img{
+        width: 45%;
+        
+    }
+    .li-container-links{
+        width: 55%;
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .nav-list-img{
+        cursor: pointer;
+        
+    }
+    
+    .nav-list-a{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 17px;
+        cursor: pointer;
+       
+    }
+
+
+    .pai-list-mobile.active{
+        transform: translateX(0);
+        display:flex ;
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .navLinkFadeAnimation {
+        animation: navLinkFade 0.5s ease forwards;
+    }
+ 
+
+    .pai-list-mobile.active{
+        padding: 15%;
+    }
+    .mobile-menu.active {
+        position: relative;
+        z-index: 1000;
+
+    }
+
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+        background-color: black;
+    }
+    .mobile-menu.active .line2 {
+        opacity: 0;
+        background-color: black;
+    }
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+        background-color: black;
+    }
+    .nav-sec-links{
+        display: none;
+
+    }
+   
+
+
+
+
+}

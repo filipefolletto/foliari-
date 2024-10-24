@@ -1,0 +1,287 @@
+.header {
+    width: 100%;
+
+    background: linear-gradient(100deg, rgba(6, 92, 173, 0.19) 0%, rgba(14, 44, 71, 0.19) 99.58%), linear-gradient(259deg, rgba(21, 155, 135, 0.79) 0.77%, #CDF3EC 38.81%, #34a799 100%, #4a9b89 100%), radial-gradient(50% 54.64% at 50% 45.36%, rgba(0, 0, 0, 0.00) 0%, rgba(42, 200, 133, 0.20) 100%);
+
+}
+.container{
+    max-width: 1512px;
+    margin: 0 auto;
+    height: 100%;
+ 
+
+} 
+
+.header-conteudo{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+   
+    
+}
+.header-section{
+    display: flex;
+   
+    
+}
+
+.header-section-titles{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 10vh;
+   
+}
+
+
+.header-section-titles-intrudution{
+    gap: 20px;
+
+}
+
+.header-section-titles-intrudution  h1{
+    color: #221101;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+
+   
+}
+
+.header-section-titles-intrudution  p{
+    color: #4D4D4D;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+    
+}
+/* botoes */
+.header-section-button{
+  
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20vh;
+    padding-top: 5vh;
+    gap: 20px;
+    order: 2
+}
+
+.header-section-button button{
+    padding: 5% 5%;
+    max-width: 255px;
+ }
+
+#catalogo,#entre-em-contato{
+    width: 255px;
+    height: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    padding:0%;
+}
+
+#zapBotton{
+    position: absolute;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+
+.header-section-button button:hover{
+    background-color: #4385C2;
+    transform: scale(1.03);
+    transition: all  0.5s ease;
+}
+
+#catalogo:hover, #entre-em-contato:hover{
+    color: #ffffff;
+}
+
+
+
+
+.header-section-image{
+   
+    width: 50%;
+    display: flex;
+
+    justify-content: center;
+
+}
+.header-section-image img{
+    padding: 4%;
+    height: 537px;
+}
+
+
+
+
+/* button duplicater */
+.button-duplicate-none{
+    display: none;
+}
+
+#catalogo-duplicate{
+    margin-bottom: 27px;
+}
+
+
+
+
+@media(max-width: 16in ){
+    
+    .header-section-image img{
+        width: 458px;
+        height: 463px;
+        
+    }
+    
+.header-section-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+    padding-top: 27px ;
+    gap: 20px;
+}
+
+#catalogo, #entre-em-contato{
+    width: 255px;
+    height: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+}
+
+
+
+/* VERSÃO MOBILE ____________________________________________________________________________________________________ */
+
+
+
+@media (max-width: 11in) {
+    
+#catalogo, #entre-em-contato {
+    width: 255px;
+    height: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#catalogo{
+    visibility: hidden;
+}
+
+    
+.header-section-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    gap: 20px;
+}
+
+
+
+.header{
+    background: linear-gradient(165deg, rgba(192, 244, 218, 0) 30.74%, rgba(4, 95, 52, 0.203) 99.01%), linear-gradient(195deg, rgb(73, 180, 168) 0%, rgba(99, 194, 158, 0.932) 35.73%, rgb(99, 238, 222) 98.44%), radial-gradient(38.05% 38.05% at 50% 61.95%, rgba(0, 0, 0, 0.00) 0%, rgba(42, 200, 134, 0) 100%);
+    order: 1;
+    padding: 3.5%;
+  
+}
+
+
+.header-section{
+        display: flex;
+        flex-direction: column;
+    
+} 
+
+.header-section-titles-intrudution{
+    gap: 3.5;
+
+}
+
+
+.header-section-titles{
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+   
+}
+
+    
+.header-section-titles-intrudution  h1{
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.header-section-titles-intrudution p{
+    color: #4D4D4D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.header-section-image{
+    order: 0;
+    width: 100%;
+
+}
+
+
+
+.button-duplicate-none{
+    display: block;
+}
+
+
+
+}
+@media (max-width: 360px)  {
+    .header-section-image img{
+        width: 305px;
+        height: 312px;
+        
+    }
+    
+    
+}

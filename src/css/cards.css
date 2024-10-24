@@ -1,0 +1,30 @@
+
+.biggerCard{
+    transform: scale(1.01);
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+.img-produto-card{
+    width: 368px;
+    height: 249px; 
+    border-radius: 20px;
+    background-position: center;
+}
+
+.nomeProduto{
+    font-weight: 400;
+    color: black;
+    font-size: 36px;
+    line-height: 24px;
+    word-wrap: break-word;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.linha{
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 10%;
+  
+}

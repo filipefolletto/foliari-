@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", Helvetica;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F5F5F7;
+    font-family: Roboto, "Helvetica Neue", Helvetica;
+    overflow-x: hidden;
+    
+} 
+section {
+    display: flex;
+}
+
+#container-supremo{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+button{
+    border-radius: 30px;
+    background: #B9E4FA;
+    border-color: transparent;
+    width: 254px;
+    height: 44px;
+    font-size: 14px;
+
+}
+
+h2{
+    width: 100%;
+}
+
+h4{
+    width: 50%;
+    color: #212121;
+    font-size: 30px;
+    line-height: 44px;
+}
+
+p{
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 500px){
+    .header{
+        order: 1;
+    }
+    .main-carrocel{
+        display: none;
+        /* order: 4; */
+    }
+    .linhas-colchoes{
+        display: none;
+        order: 3;
+    }
+    .section-avaliacoes{
+        order: 5;
+    }
+    .section-nossoTime{
+        order: 2;
+    }
+    .footer-icons{
+        order: 3;
+    }
+   .carrocelMobile-container{
+        
+        order: 4;
+   }
+   .certificados-mobile{
+        order: 6;
+   }
+   .inforamcoes-footer{
+       order: 7;
+   }
+
+
+}
+
+
+
