@@ -1,0 +1,18 @@
+const API_KEY = 'AIzaSyCHnC6WOLnhw7nXFtzUilC-SIeMb7BDXeY';
+const SPREADSHEET_ID = '1RqdLOaIB9RN5oELAI8MbeKndXgcXkc6DabqLWaxB2dg';
+const RANGE = 'Sheet1!B2:F17';  // Intervalo que você quer ler
+
+const URL = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`;
+
+fetch(URL)
+  .then(response => response.json())
+  .then(data => {
+    console.log('Dados da planilha:', data.values);
+  })
+  .catch(error => {
+    console.error('Erro ao obter os dados:', error);
+  });
+  
+  module.exports = {
+    getPlanilhaDados: () => planilhaDados,  // Função para obter os dados armazenados
+};
